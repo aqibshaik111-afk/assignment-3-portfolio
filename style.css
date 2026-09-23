@@ -727,7 +727,40 @@ nav {
 .menu-icon {
     display: none;
 }
+@media screen and (max-width: 900px) {
+    header .page-container,
+    .hero .page-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 
+    nav {
+        justify-self: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .information-row,
+    .card-row,
+    .skills-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section .page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section .section-title,
+    .contact-section .section-introduction {
+        grid-column: 1;
+    }
+
+    .section-introduction {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 499px) {
     header .page-container {
         grid-template-columns: 1fr auto;
